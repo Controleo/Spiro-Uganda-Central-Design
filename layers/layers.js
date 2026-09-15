@@ -75,20 +75,20 @@ var lyr_FOFO_4 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/FOFO_4.png" /> FOFO'
             });
-var format_FastCharger_5 = new ol.format.GeoJSON();
-var features_FastCharger_5 = format_FastCharger_5.readFeatures(json_FastCharger_5, 
+var format_ReservedTouchPoints_5 = new ol.format.GeoJSON();
+var features_ReservedTouchPoints_5 = format_ReservedTouchPoints_5.readFeatures(json_ReservedTouchPoints_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_FastCharger_5 = new ol.source.Vector({
+var jsonSource_ReservedTouchPoints_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_FastCharger_5.addFeatures(features_FastCharger_5);
-var lyr_FastCharger_5 = new ol.layer.Vector({
+jsonSource_ReservedTouchPoints_5.addFeatures(features_ReservedTouchPoints_5);
+var lyr_ReservedTouchPoints_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_FastCharger_5, 
-                style: style_FastCharger_5,
-                popuplayertitle: 'Fast Charger',
+                source:jsonSource_ReservedTouchPoints_5, 
+                style: style_ReservedTouchPoints_5,
+                popuplayertitle: 'Reserved Touch Points',
                 interactive: true,
-                title: '<img src="styles/legend/FastCharger_5.png" /> Fast Charger'
+                title: '<img src="styles/legend/ReservedTouchPoints_5.png" /> Reserved Touch Points'
             });
 var format_COUFastChargers_6 = new ol.format.GeoJSON();
 var features_COUFastChargers_6 = format_COUFastChargers_6.readFeatures(json_COUFastChargers_6, 
@@ -166,13 +166,13 @@ var lyr_24Racks_10 = new ol.layer.Vector({
                 title: '<img src="styles/legend/24Racks_10.png" /> 24 Racks'
             });
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_Gridscores_Uganda_1.setVisible(true);lyr_UgandaStations15kmGrid_2.setVisible(true);lyr_PetroStations_3.setVisible(true);lyr_FOFO_4.setVisible(true);lyr_FastCharger_5.setVisible(true);lyr_COUFastChargers_6.setVisible(true);lyr_COU6Racks_7.setVisible(true);lyr_Active6Racks_8.setVisible(true);lyr_48Racks_9.setVisible(true);lyr_24Racks_10.setVisible(true);
-var layersList = [lyr_GoogleHybrid_0,lyr_Gridscores_Uganda_1,lyr_UgandaStations15kmGrid_2,lyr_PetroStations_3,lyr_FOFO_4,lyr_FastCharger_5,lyr_COUFastChargers_6,lyr_COU6Racks_7,lyr_Active6Racks_8,lyr_48Racks_9,lyr_24Racks_10];
+lyr_GoogleHybrid_0.setVisible(true);lyr_Gridscores_Uganda_1.setVisible(true);lyr_UgandaStations15kmGrid_2.setVisible(true);lyr_PetroStations_3.setVisible(true);lyr_FOFO_4.setVisible(true);lyr_ReservedTouchPoints_5.setVisible(true);lyr_COUFastChargers_6.setVisible(true);lyr_COU6Racks_7.setVisible(true);lyr_Active6Racks_8.setVisible(true);lyr_48Racks_9.setVisible(true);lyr_24Racks_10.setVisible(true);
+var layersList = [lyr_GoogleHybrid_0,lyr_Gridscores_Uganda_1,lyr_UgandaStations15kmGrid_2,lyr_PetroStations_3,lyr_FOFO_4,lyr_ReservedTouchPoints_5,lyr_COUFastChargers_6,lyr_COU6Racks_7,lyr_Active6Racks_8,lyr_48Racks_9,lyr_24Racks_10];
 lyr_Gridscores_Uganda_1.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'score': 'score', });
 lyr_UgandaStations15kmGrid_2.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'row_index': 'row_index', 'col_index': 'col_index', });
 lyr_PetroStations_3.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
 lyr_FOFO_4.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
-lyr_FastCharger_5.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
+lyr_ReservedTouchPoints_5.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
 lyr_COUFastChargers_6.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
 lyr_COU6Racks_7.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
 lyr_Active6Racks_8.set('fieldAliases', {'fid': 'fid', 'SSID': 'SSID', 'Name': 'Name', 'Station Capacity': 'Station Capacity', 'Racks': 'Racks', 'LATITUDE': 'LATITUDE', 'LONGITUDE': 'LONGITUDE', 'District': 'District', 'Region': 'Region', 'Priority': 'Priority', 'Installed Capacity': 'Installed Capacity', '45%': '45%', 'Active Riders': 'Active Riders', 'Deployment': 'Deployment', 'unnamed (1)': 'unnamed (1)', 'unnamed (2)': 'unnamed (2)', });
@@ -182,7 +182,7 @@ lyr_Gridscores_Uganda_1.set('fieldImages', {'fid': '', 'id': '', 'score': '', })
 lyr_UgandaStations15kmGrid_2.set('fieldImages', {'fid': '', 'id': '', 'left': '', 'top': '', 'right': '', 'bottom': '', 'row_index': '', 'col_index': '', });
 lyr_PetroStations_3.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
 lyr_FOFO_4.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
-lyr_FastCharger_5.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
+lyr_ReservedTouchPoints_5.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
 lyr_COUFastChargers_6.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
 lyr_COU6Racks_7.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
 lyr_Active6Racks_8.set('fieldImages', {'fid': '', 'SSID': '', 'Name': '', 'Station Capacity': '', 'Racks': '', 'LATITUDE': '', 'LONGITUDE': '', 'District': '', 'Region': '', 'Priority': '', 'Installed Capacity': '', '45%': '', 'Active Riders': '', 'Deployment': '', 'unnamed (1)': '', 'unnamed (2)': '', });
@@ -192,7 +192,7 @@ lyr_Gridscores_Uganda_1.set('fieldLabels', {'fid': 'no label', 'id': 'no label',
 lyr_UgandaStations15kmGrid_2.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'left': 'no label', 'top': 'no label', 'right': 'no label', 'bottom': 'no label', 'row_index': 'no label', 'col_index': 'no label', });
 lyr_PetroStations_3.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
 lyr_FOFO_4.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
-lyr_FastCharger_5.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
+lyr_ReservedTouchPoints_5.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
 lyr_COUFastChargers_6.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
 lyr_COU6Racks_7.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
 lyr_Active6Racks_8.set('fieldLabels', {'fid': 'no label', 'SSID': 'no label', 'Name': 'inline label - visible with data', 'Station Capacity': 'inline label - visible with data', 'Racks': 'inline label - visible with data', 'LATITUDE': 'no label', 'LONGITUDE': 'no label', 'District': 'no label', 'Region': 'no label', 'Priority': 'no label', 'Installed Capacity': 'no label', '45%': 'no label', 'Active Riders': 'no label', 'Deployment': 'no label', 'unnamed (1)': 'no label', 'unnamed (2)': 'no label', });
